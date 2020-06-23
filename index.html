@@ -6,5 +6,63 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!--Titulo de la calculadora-->
+    <h1>Calculadora</h1>
+
+    <!--panel de la calculadora-->
+    <div class="calculator">
+      <!--Pantalla de resultados-->
+      <input
+        class="calculator__screen"
+        type="text"
+        value="0"
+        placeholder=""
+        disabled
+      />
+      <!--Caja de numeros-->
+      <div class="calculator__keypad">
+        <!--Botones fila 1-->
+        <button onclik="getContentClick(event)" class="btn btn-dark">AC</button>
+        <button onclik="getContentClick(event)" class="btn btn-dark">
+          +/-
+        </button>
+        <button onclik="getContentClick(event)" class="btn btn-dark">%</button>
+        <button onclik="getContentClick(event)" class="btn btn-orange">
+          /
+        </button>
+
+        <!--Botones fila 2-->
+        <button onclik="getContentClick(event)" class="btn">7</button>
+        <button onclik="getContentClick(event)" class="btn">8</button>
+        <button onclik="getContentClick(event)" class="btn">9</button>
+        <button onclik="getContentClick(event)" class="btn btn-orange">
+          X
+        </button>
+
+        <!--Botones fila 3-->
+        <button onclik="getContentClick(event)" class="btn">4</button>
+        <button onclik="getContentClick(event)" class="btn">5</button>
+        <button onclik="getContentClick(event)" class="btn">6</button>
+        <button onclik="getContentClick(event)" class="btn btn-orange">
+          -
+        </button>
+
+        <!--Botones fila 4-->
+        <button onclik="getContentClick(event)" class="btn">1</button>
+        <button onclik="getContentClick(event)" class="btn">2</button>
+        <button onclik="getContentClick(event)" class="btn">3</button>
+        <button onclik="getContentClick(event)" class="btn btn-orange">
+          +
+        </button>
+
+        <!--Botones fila 5-->
+        <button onclik="getContentClick(event)" class="btn">0</button>
+        <button onclik="getContentClick(event)" class="btn">,</button>
+        <button onclik="getContentClick(event)" class="btn btn-orange">
+          =
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
